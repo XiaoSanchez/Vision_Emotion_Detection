@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		02611D901EEA5317009714B8 /* VisionDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisionDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02611D901EEA5317009714B8 /* EmotionDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmotionDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02611D931EEA5317009714B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02611D951EEA5317009714B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		02611D981EEA5317009714B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -27,7 +27,7 @@
 		02611D9D1EEA5317009714B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02611D9F1EEA5317009714B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02611DA51EEA5683009714B8 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
-		7980A12720B00B540025D323 /* CNNEmotions.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CNNEmotions.mlmodel; sourceTree = "<group>"; };
+		7980A12720B00B540025D323 /* CNNEmotions.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = CNNEmotions.mlmodel; path = EmotionDetection/CNNEmotions.mlmodel; sourceTree = SOURCE_ROOT; };
 		7980A12920B02DBB0025D323 /* imgae.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imgae.swift; sourceTree = "<group>"; };
 		7980A12B20B089BD0025D323 /* uiimage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uiimage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -46,7 +46,7 @@
 		02611D871EEA5317009714B8 = {
 			isa = PBXGroup;
 			children = (
-				02611D921EEA5317009714B8 /* VisionDetection */,
+				02611D921EEA5317009714B8 /* EmotionDetection */,
 				02611D911EEA5317009714B8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +54,12 @@
 		02611D911EEA5317009714B8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				02611D901EEA5317009714B8 /* VisionDetection.app */,
+				02611D901EEA5317009714B8 /* EmotionDetection.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		02611D921EEA5317009714B8 /* VisionDetection */ = {
+		02611D921EEA5317009714B8 /* EmotionDetection */ = {
 			isa = PBXGroup;
 			children = (
 				7980A12720B00B540025D323 /* CNNEmotions.mlmodel */,
@@ -73,15 +73,15 @@
 				7980A12920B02DBB0025D323 /* imgae.swift */,
 				7980A12B20B089BD0025D323 /* uiimage.swift */,
 			);
-			path = VisionDetection;
+			path = EmotionDetection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		02611D8F1EEA5317009714B8 /* VisionDetection */ = {
+		02611D8F1EEA5317009714B8 /* EmotionDetection */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 02611DA21EEA5317009714B8 /* Build configuration list for PBXNativeTarget "VisionDetection" */;
+			buildConfigurationList = 02611DA21EEA5317009714B8 /* Build configuration list for PBXNativeTarget "EmotionDetection" */;
 			buildPhases = (
 				02611D8C1EEA5317009714B8 /* Sources */,
 				02611D8D1EEA5317009714B8 /* Frameworks */,
@@ -91,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = VisionDetection;
-			productName = VisionDetection;
-			productReference = 02611D901EEA5317009714B8 /* VisionDetection.app */;
+			name = EmotionDetection;
+			productName = EmotionDetection;
+			productReference = 02611D901EEA5317009714B8 /* EmotionDetection.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -111,7 +111,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 02611D8B1EEA5317009714B8 /* Build configuration list for PBXProject "VisionDetection" */;
+			buildConfigurationList = 02611D8B1EEA5317009714B8 /* Build configuration list for PBXProject "EmotionDetection" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -124,7 +124,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				02611D8F1EEA5317009714B8 /* VisionDetection */,
+				02611D8F1EEA5317009714B8 /* EmotionDetection */,
 			);
 		};
 /* End PBXProject section */
@@ -287,9 +287,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = VisionDetection/Info.plist;
+				INFOPLIST_FILE = EmotionDetection/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = CNN;
+				PRODUCT_BUNDLE_IDENTIFIER = Shawn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -301,9 +302,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = VisionDetection/Info.plist;
+				INFOPLIST_FILE = EmotionDetection/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = CNN;
+				PRODUCT_BUNDLE_IDENTIFIER = Shawn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,7 +315,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		02611D8B1EEA5317009714B8 /* Build configuration list for PBXProject "VisionDetection" */ = {
+		02611D8B1EEA5317009714B8 /* Build configuration list for PBXProject "EmotionDetection" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				02611DA01EEA5317009714B8 /* Debug */,
@@ -322,7 +324,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		02611DA21EEA5317009714B8 /* Build configuration list for PBXNativeTarget "VisionDetection" */ = {
+		02611DA21EEA5317009714B8 /* Build configuration list for PBXNativeTarget "EmotionDetection" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				02611DA31EEA5317009714B8 /* Debug */,
